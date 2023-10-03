@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="card__wrapper">
+        <div class="card">
+          <div class="card__header">
+            <h1>User search</h1>
+            <input
+              type="text"
+              class="input__lastName"
+              placeholder="Search by last name"
+            />
+            <input
+              type="text"
+              class="input__ID"
+              placeholder="Search by ID number"
+            />
+            <button class="searchBtn">Search</button>
+          </div>
+          <div class="card__main">
+            <p class="first__name"></p>
+            <p class="last__name"></p>
+            <p class="id"></p>
+            <p class="email"></p>
+            <p class="catchphrase"></p>
+          </div>
+          <div class="card__footer"></div>
+        </div>
+      </div>
+      <div class="card__wrapper">
+        <div class="card">
+          <div class="add__header">
+            <h2>Add New User</h1>
+          </div>
+          <div class="add__main">
+            <input
+              type="text"
+              class="add__firstName"
+              placeholder="First name"
+            />
+            <input
+              type="text"
+              class="add__lastName"
+              placeholder="Last name"
+            />
+            <input
+            type="email"
+            class="add__email"
+            placeholder="Email"
+          />
+          <input
+          type="text"
+          class="add__catchphrase"
+          placeholder="Catchphrase"
+        />
+
+          </div>
+          <div class="add__footer">
+            <button class="addBtn">Add Employee</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
