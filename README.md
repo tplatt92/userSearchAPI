@@ -1,10 +1,8 @@
-## Recap task
+User Management API - Completed Challenge
 
-The goal is to build an API that allows callers to perform CRUD operations against a collection of users. Take the time to familiarise yourself with the existing codebase, including any NPM scripts that have already been set up for you.
+During this challenge I manged to build a fully functional API that allows users to perform CRUD operations on a collection of users.
 
-### Create your API routes
-
-👉 Create a REST API using the user JSON data found in `users.json`. The API will feature the following endpoints:
+Endpoints:
 
 | HTTP Method | Path       | Request Body (JSON)          | Response Body (JSON)         | Status Code | Description                    |
 | ----------- | ---------- | ---------------------------- | ---------------------------- | ----------- | ------------------------------ |
@@ -26,21 +24,8 @@ An example user object looks like the following:
 }
 ```
 
-**IMPORTANT:** All JSON responses from your API should adhere to the [JSend](https://github.com/omniti-labs/jsend) specification. This specification provides a consistent structure for your responses, making your API more predictable and easier to interact with.
+JSend Specification
+I ensured that all JSON responses from my API adhere to the JSend specification. This consistency in response format makes your API predictable and user-friendly.
 
-Remember to break down the task and tackle it step by step. You'll need to plan and implement `app.js`, `users.js` and test each route (using Thunder Client).
-
-## Bonus challenges (_These are optional if you're ready for an extra challenge!_)
-
-⭐ If you've finished everything above and have time left over, keep developing! Think through what ideas you can come up with to improve functionality.
-
-This can include:
-
-- Advanced Routing with Query Parameters
-  - Search: Add a search feature on the /users endpoint. For instance, /users?name=ResourceName could return users with names matching the query.
-  - Sorting: Allow sorting of users. For instance, /users?sort=name could return users sorted alphabetically by name.
-- Error Handling and Responses
-  - If a user with a specific ID isn't found, return a 404 Not Found status code along with a clear error message.
-  - For other errors, such as server errors or bad request data, return appropriate status codes like 500 Internal Server Error or 400 Bad Request with clarifying error messages.
-  - Implement middleware for error handling in your Express server.
-- In a separate repository, create a frontend for your API and use a UI and fetch to interact with it.
+Testing
+I tested each route using Thunder Client or another API testing tool, validating that the API works as expected.
